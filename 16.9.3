@@ -1,0 +1,11 @@
+class Buyer:
+    def __init__(self, firstname, lastname, balance):
+        self.firstnam = lastname
+        self.lastname = firstname
+        self.balance = balance
+
+    def printInformation(self):
+        print('Покупатель: {} {}, Баланс: {} руб.'.format(self.firstnam, self.lastname, self.balance))
+
+client_1 = Buyer ("Сергей", "Шуров", "580")
+client_1.printInformation()
