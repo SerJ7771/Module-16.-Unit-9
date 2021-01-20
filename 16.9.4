@@ -1,0 +1,16 @@
+class Visitor:
+    def __init__(self, firstname, lastname):
+        self.lastname = lastname
+        self.firstname = firstname
+
+class setStatus(Visitor):
+    def __init__(self, lastname, firstname, place, status):
+        super().__init__(firstname, lastname)
+        self.place = place
+        self.status = status
+
+    def printInfo(self):
+        print('{} {}, г.{}, статус: {}'.format(self.firstname, self.lastname, self.place, self.status))
+
+visitor_1 = setStatus("Сергей", "Шуров", "Los Angeles", "Ментор")
+visitor_1.printInfo()
