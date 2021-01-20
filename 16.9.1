@@ -1,0 +1,19 @@
+class Cube:
+    def __init__(self, x, y, width, height):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+
+    def recCube(self):
+        return self.width * self.height
+
+
+cube_1 = Cube(2, 15, 7, 20)
+
+print(cube_1.recCube())
+
+def getCube (x, y, width, height):
+    return "Cube( {}, {}, {}, {})".format(x, y, width, height)
+
+print(getCube(2, 15, 7, 20))
